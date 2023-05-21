@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.eee7a1e8.ico">
+  <link rel="apple-touch-icon" href="/favicon.eee7a1e8.ico">
+  <title>Welcome to NEAR</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/index.bc0daea6.css">
+  <link href="/index.4110e2cc.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- <div id="signed-in-flow">
+    <button style="float: right" id="sign-out-button">
+      Sign out <span data-behavior="account-id"></span>
+    </button>
+  </div> -->
+  <main>
+    <!-- <h1 id="signed-out-flow"> Welcome! Login to Play </h1>
+    <h1 id="signed-in-flow"> Welcome <span data-behavior="account-id"></span>!</h1>
+
+    <div id="signed-out-flow">
+
+      <p style="text-align: center; margin-top: 2.5em">
+        <button id="sign-in-button">Sign in with NEAR Wallet</button>
+      </p>
+
+    </div>
+
+    <div id="signed-in-flow">
+
+      <table>
+        <tr>
+          <td>
+            <p>What do you think is coming next?</p>
+          </td>
+          <td>
+            <button id="choose-tails">Tails</button>
+            <button id="choose-heads">Heads</button>
+            <button id="pay">Pay</button>
+          </td>
+        </tr>
+      </table>
+      <p class="status"><b>Status</b>: <span data-behavior="status">Waiting user input</span></p>
+      <h3>
+        Your points so far: <span class="points" data-behavior="points"></span>
+      </h3>
+    </div> -->
+
+    <div class="mx-auto max-w-full">
+      <div class="h-full bg-gray-50">
+        <div class="rounded-b-xl bg-indigo-600 p-5 pb-44 text-white">
+          <div class="mb-4 flex items-center justify-between">
+            <div class="rounded-lg bg-indigo-50/30 p-3 hover:bg-white hover:text-indigo-500">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"></path>
+              </svg>
+            </div>
+            <h1 class="ext-center text-3xl font-semibold">NEAR Extension for Shop</h1>
+
+            <button class="rounded-lg bg-indigo-50/30 p-5 hover:bg-white hover:text-indigo-500" id="sign-out-button" role="button">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <div class="space-y-2 text-center">
+            <div class="text-slate-200">
+
+            </div>
+            <div class="text-4xl font-bold tracking-wider" id="total_amount_num">$0</div>
+            <div class="text-slate-200" id="usd-value"></div>
+          </div>
+        </div>
+
+        <div class="-mt-40 p-5 mx-auto max-w-[850px] ">
+          <div id="signed-out-flow">
+            <button class="flex w-full items-center justify-center rounded-lg bg-gray-800 py-4 px-5 font-medium tracking-wide text-white text-opacity-90 shadow-slate-100 hover:shadow-lg" id="hello-button">
+              <span class="mr-2">Complete Transaction</span>
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </button>
+          </div>
+          <div id="signed-in-flow">
+            <button class="flex w-full items-center justify-center rounded-lg bg-gray-800 py-4 px-5 font-medium tracking-wide text-white text-opacity-90 shadow-slate-100 hover:shadow-lg" id="hello-button">
+              <span class="mr-2">LOL</span>
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </button>
+          </div>
+          <!-- </div> -->
+        </div>
+        <div class="p-1 mx-auto max-w-[1200px] ">
+          <div class="gap-4">
+            <div class="max-w-xl m-4 p-10 bg-white rounded shadow-xl">
+              <p class="text-gray-800 font-medium">Customer information</p>
+              <div class="">
+                <label class="block text-sm text-gray-00" for="cus_name">Name</label>
+                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" name="cus_name" type="text" placeholder="Your Name" aria-label="Name" id="cus_name">
+              </div>
+              <div class="mt-2">
+                <label class=" block text-sm text-gray-600" for="cus_address">Address</label>
+                <input class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded" id="cus_address" name="cus_address" type="text" placeholder="Street">
+              </div>
+              <div class="inline-block mt-2 w-1/2 pr-1">
+                <label class="hidden text-sm block text-gray-600" for="cus_city">City</label>
+                <input class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded" id="cus_city" name="cus_city" type="text" placeholder="City">
+              </div>
+              <div class="inline-block mt-2 -mx-1 pl-1 w-1/2">
+                <label class="hidden text-sm block text-gray-600" for="cus_city">State</label>
+                <input class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded" id="cus_state" name="cus_city" type="text" placeholder="City">
+              </div>
+              <div class="inline-block mt-2 w-1/2 pr-1">
+                <label class="hidden block text-sm text-gray-600" for="cus_country">Country</label>
+                <input class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded" id="cus_country" name="cus_country" type="text" placeholder="Country">
+              </div>
+              <div class="inline-block mt-2 -mx-1 pl-1 w-1/2">
+                <label class="hidden block text-sm text-gray-600" for="cuz_zip">Zip</label>
+                <input class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded" id="cus_zip" name="cus_zip" type="text" placeholder="Country">
+              </div>
+              <p class="mt-4 text-gray-800 font-medium">NEAR Account Information</p>
+              <div class="">
+                <label class="block text-sm text-gray-600" for="cus_name">Account / Network</label>
+                <input class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded" id="cus_account" name="cus_account" type="text" placeholder="@testing-shopify.testnet" aria-label="Name" disabled="true">
+              </div>
+
+            </div>
+
+            <div class="">
+              <div class="max-w-xl m-4 p-10 bg-white rounded shadow-xl">
+                <p class="text-gray-800 font-medium">Product Information</p>
+                <div class="flex space-x-4 rounded-xl bg-white p-3 shadow-sm">
+                  <img class="aspect-square w-16 rounded-lg bg-center object-cover" src="https://cdn.shopify.com/s/files/1/0685/0976/1814/products/m116519ln-0038_1024x1024.png" alt="">
+                  <div>
+                    <h4 class="font-semibold text-gray-600">Rolex Daytona Cosmograph</h4>
+                    <p class="text-sm text-slate-400">NEAR Hackathon Store Preview
+                    </p>
+                  </div>
+                  <div>
+                    <button type="button" class="rounded bg-slate-50 px-2 text-xl text-slate-500 hover:bg-slate-100">&times;</button>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="mt-4">
+                <button class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded"
+                  id="hello-button">Hello</button>
+                <button class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded"
+                  id="sign-in-button">Sign in
+                  with your NEAR Wallet</button>
+              </div> -->
+            </div>
+          </div>
+          <!-- ... -->
+        </div>
+      </div>
+    </div>
+    
+  </main>
+  <script src="/index.3d214d75.js" defer=""></script>
+</body>
+
+</html>
