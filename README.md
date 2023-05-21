@@ -1,4 +1,4 @@
-##FUNDCHAIN
+## FUNDCHAIN
 - Revolutionizing e-commerce with NEAR blockchain, ensuring secure transactions for 1.7M+ Shopify merchants, combating $56B fraud, while promoting mental health through AI chatbot support.
 
 ##  🤔 Problem Statement
