@@ -1,5 +1,5 @@
 ##FUNDCHAIN
-FundChain: Revolutionizing e-commerce with NEAR blockchain, ensuring secure transactions for 1.7M+ Shopify merchants, combating $56B fraud, while promoting mental health through AI chatbot support.
+- Revolutionizing e-commerce with NEAR blockchain, ensuring secure transactions for 1.7M+ Shopify merchants, combating $56B fraud, while promoting mental health through AI chatbot support.
 
 ##  🤔 Problem Statement
 - The e-commerce industry is evolving rapidly, and there is an increasing demand for decentralized payment solutions. - Shopify, one of the biggest players in the e-commerce industry with over 1.7 million active merchants, processed more than $79.5 billion in sales in 2021. However, it lacks a good way of processing crypto transactions without resorting to centralized exchanges.
